@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Index/Landing</title>
+
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Navbar -->
+    <nav class="navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="Plots" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+                </a>
+              </li>
+            </ul>
+        </div>
+          <div>
+              <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      
+        <!--Input all 4 graphs in plot with desciption and graphs-->
+
+<body>
+    <main class="container">
+        <section id="main-bio">
+          <section id="figure">
+            <h2 id="bio-name">Summary: Latitude vs. X</h2>
+            <a target="_blank" href="assets/Fig1.png"><img width=50% src="assets/Fig1.png" alt="Max Temperature Graph">
+            </a>
+            <p>This website conists of several scatter plots showing the relationship between Latitude and Highest Temperature, 
+              Humidity, Cloudiness and Wind Speed. We process the data using the Cities.csv to analyze how the weather changes as you get closer to the equator and farther away from the equator. 
+              We used Matplotlib scatter plot graph to showcase our results. Using the scatter plot graph will indicate a postive, negative or no correlation between the two subjects.There are 4 individuals web page showing the relationship of Latitude vs. Highest Temperature, 
+              Latitude and Humidity, Latitude and Cloudiness and Latitude and Wind Speed. By clicking into their individual web page, you will obtain the scatter plot and an analysis of the graph.
+            </p>
+            <p> Along with the individual web pages, there is a comparison page. The comparison page consist of the four scatter plots together so you can visually see the similarites and differences
+                of these scatter plots. Additionally, there is a Data web page that consist of the data used in a table. Using the table will allow you to see the datasets clearly.
+            </p>
+
+
+
+
+
+
+<!--Visualitzation-->
+          <!--Row 1-->
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="display-20">vs. Max Temperature</h1>
+              <a href="Temperature.html"><img width=75% src="assets/Fig1.png" alt="Temperature Graph">
+              </a>
+            </div>
+            <div class ="col-md-6">
+                <h1 class="display-20"> vs. Humidity</h1>
+                <a href="Humidity.html"><img width=75% src="assets/Fig2.png" alt="Humidity Graph">
+                </a>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="display-20">vs. Cloudiness</h1>
+                <a href="Cloudiness.html"><img width=75% src="assets/Fig3.png" alt="Cloudiness Graph">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <h1 class="display-20">vs. Wind Speed</h1>
+                <a href="Windspeed.html"><img width=75% src="assets/Fig4.png" alt="WindSpeed Graph">
+                </a>
+            </div>
+        </div>

@@ -1,0 +1,42 @@
+.box {
+    height: 400px;
+    padding: 20px;
+    color: #fff;
+    background: deepskyblue;
+  }
+
+.display-4 {
+    color:cadetblue;
+
+}
+  
+  .margin-top-80 {
+    margin-top: 80px;
+  }
+  
+
+.navbar-expand-lg{
+  float: right;
+}
+
+.dropdown-menu {
+  float: right
+}
+
+.form-inline{
+  float: right;
+}
+
+.row {
+  margin-left: 75px;
+  margin-bottom: 100px;
+  border-color: grey;
+}
+
+.dataframe {
+  margin-left: 50px;
+}
+
+.container {
+  overflow: hidden;
+}
